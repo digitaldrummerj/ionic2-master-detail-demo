@@ -22,4 +22,16 @@ export class MyApp {
   }
 }
 
-ionicBootstrap(MyApp);
+ionicBootstrap(MyApp, []
+//, {
+//   backButtonText: 'Back Up!',
+//   tabsLayout: "icon-bottom",
+//   platforms: {
+//     ios: {
+//       tabsPlacement: 'top',
+//       iconMode: 'md',
+//       tabsHideOnSubPages: true
+//     }
+//   }  
+//}
+);

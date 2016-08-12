@@ -12,13 +12,13 @@
     </ion-refresher-content>
   </ion-refresher>
   <ion-list>
-    <ion-item *ngFor="let user of users; let i = index" (click)="goToUserDetail(user)">
+      <button *ngFor="let user of users; let i = index" ion-item (click)="goToUserDetail(user)">
       <ion-avatar item-left>
         <img src="{{user.picture.thumbnail}}">
       </ion-avatar>
       <h2>{{user.name.first}} {{user.name.last}}</h2>
       <p>{{user.email}}</p>
-    </ion-item>
+      </button>
   </ion-list>
   <!--<pre>{{users | json }}</pre>-->
 
