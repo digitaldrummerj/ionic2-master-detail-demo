@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Contacts
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content pullingIcon="arrow-dropdown" pullingText="Pull to refresh" refreshingSpinner="circles" refreshingText="Refreshing...">
+    </ion-refresher-content>
+  </ion-refresher>
+  <ion-list>
+    <ion-item *ngFor="let user of users; let i = index" (click)="goToUserDetail(user)">
+      <ion-avatar item-left>
+        <img src="{{user.picture.thumbnail}}">
+      </ion-avatar>
+      <h2>{{user.name.first}} {{user.name.last}}</h2>
+      <p>{{user.email}}</p>
+    </ion-item>
+  </ion-list>
+  <!--<pre>{{users | json }}</pre>-->
+
+</ion-content>

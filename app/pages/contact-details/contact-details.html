@@ -1,0 +1,51 @@
+<!--
+  Generated template for the ContactDetailsPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>ContactDetails</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-card>
+     <ion-card-header>
+        <img src="{{user.picture.medium}}">
+        <br />
+      <h1>{{user.name.first}} {{user.name.last}}</h1>
+      <p>{{user.dob * 1000 | date}}</p>
+     </ion-card-header> 
+    <ion-card-content>
+      <ion-list no-lines>
+        <button ion-item>
+          <ion-icon name="mail" item-left></ion-icon>
+          <p>{{user.email}}</p>
+        </button>
+
+        <button ion-item>
+          <ion-icon name="home" item-left></ion-icon>
+          {{user.location.street}}
+          <br />
+          {{user.location.city}}, {{user.location.state}} {{user.location.postcode}}
+      </button>
+        <button ion-item>
+        <ion-icon name="call" item-left>
+        </ion-icon>
+        {{user.phone}}
+      </button>
+        <button ion-item>
+        <ion-icon name="phone-portrait" item-left></ion-icon>
+        {{user.cell}}
+      </button>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <!--<pre>{{user | json }}</pre>-->
+
+</ion-content>
