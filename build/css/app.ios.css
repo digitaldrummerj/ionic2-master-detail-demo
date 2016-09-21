@@ -8724,3 +8724,6 @@ body {
   font-family: -apple-system, "Helvetica Neue", "Roboto", sans-serif;
   font-size: 1.4rem;
   background-color: #fff; }
+
+.home ion-icon {
+  padding-right: 10px; }

@@ -9477,3 +9477,6 @@ body {
   font-family: "Roboto", "Helvetica Neue", sans-serif;
   font-size: 1.4rem;
   background-color: #fff; }
+
+.home ion-icon {
+  padding-right: 10px; }

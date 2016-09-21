@@ -78,6 +78,7 @@ var ContactDetailsPage = (function () {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.user = navParams.data;
+        console.log(navParams.data);
     }
     ContactDetailsPage = __decorate([
         core_1.Component({
@@ -161,10 +162,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var ionic_angular_1 = require('ionic-angular');
+var contact_1 = require('../contact/contact');
 var HomePage = (function () {
     function HomePage(navCtrl) {
         this.navCtrl = navCtrl;
     }
+    HomePage.prototype.goToContacts = function () {
+        this.navCtrl.push(contact_1.ContactPage);
+    };
     HomePage = __decorate([
         core_1.Component({
             templateUrl: 'build/pages/home/home.html'
@@ -174,7 +179,7 @@ var HomePage = (function () {
     return HomePage;
 }());
 exports.HomePage = HomePage;
-},{"@angular/core":155,"ionic-angular":469}],6:[function(require,module,exports){
+},{"../contact/contact":4,"@angular/core":155,"ionic-angular":469}],6:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
