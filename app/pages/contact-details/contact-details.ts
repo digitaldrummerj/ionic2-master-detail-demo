@@ -10,6 +10,7 @@ export class ContactDetailsPage {
 
   constructor(private navCtrl: NavController, public navParams: NavParams) {
     this.user = navParams.data;
+    console.log(navParams.data);
   }
 
 }

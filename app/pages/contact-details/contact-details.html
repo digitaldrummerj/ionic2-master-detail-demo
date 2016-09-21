@@ -14,13 +14,12 @@
 
 <ion-content>
   <ion-card>
-     <ion-card-header>
-        <img src="{{user.picture.large}}">
-        <br />
-      <h1>{{user.name.first}} {{user.name.last}}</h1>
-      <p>{{user.dob * 1000 | date}}</p>
-     </ion-card-header> 
+    <img src="{{user.picture.large}}">
     <ion-card-content>
+     <ion-card-title>
+      <h1>{{user.name.first}} {{user.name.last}}</h1>
+      <p>Birthday: {{user.dob | date}}</p>
+     </ion-card-title> 
       <ion-list no-lines>
         <ion-item>
           <ion-icon name="mail" item-left></ion-icon>
