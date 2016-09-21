@@ -5,13 +5,32 @@
 </ion-header>
 
 <ion-content padding class="home">
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>app/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <ion-row>
+    <ion-col>
+      <h2>Master/Detail Demo</h2>
+      <p>Demo showing how to implement a master/detail grid.</p>
+
+      <h3>Developed By:</h3>
+      <p>Justin James</p>
+      <p>
+        <a href="http://digitaldrummerj.me">
+          <ion-icon name="paper"></ion-icon>http://digitaldrummerj.me</a>
+      </p>
+
+      <p>
+        <a href="https://twitter.com/digitaldrummerj">
+          <ion-icon name="logo-twitter"></ion-icon>@digitaldrummerj</a>
+      </p>
+      <p>
+        <a href="https://github.com/digitaldrummerj">
+          <ion-icon name="logo-github"></ion-icon> digitaldrummerj</a>
+      </p>
+
+      <h3>Usage</h3>
+      <p>The contact tab will pull in random user data from <a href="http://api.randomuser.me">http://api.randomuser.me</a>.  You can click on each row to get the details for a user</p>
+
+      <p>Click <a (click)="goToContacts()">here</a> to go to Contact Tab</p>
+    </ion-col>
+  </ion-row>
+
 </ion-content>
